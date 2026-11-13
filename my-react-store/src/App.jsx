@@ -1,8 +1,10 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer' 
-import Catalog from './components/Catalog'
 import Product from './components/Product' 
+import Catalog from './pages/Catalog'
+
+
 
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
       <h1>Hello from react</h1>
       <Navbar/>
       <Product/>   
+      
       <Catalog/>
       <Footer/>
     </div>
