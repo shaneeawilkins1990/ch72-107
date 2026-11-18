@@ -24,3 +24,9 @@ img:hover {
     outline: 2px solid rgba(0, 0, 0, 0.2);
 }
 
+.product > label {
+    display: inline-block;
+    margin: 8px 8px;
+
+
+}
