@@ -5,7 +5,8 @@ import './Navbar.css';
 function Navbar() {
     return(
         <div>
-           <h5>This is my menu</h5>
+           <h5>Welcome to the farm! 
+            <br></br></h5>
         </div>
     )
 }

@@ -22,9 +22,9 @@ function QuantityPicker() {
 
   return (
     <div className="quantity-picker"> {/* className is JS */}
-      <button className="btn-minus" onClick={handleDecrease}>-</button>
+      <button className="btn-minus btn btn-primary" onClick={handleDecrease}>-</button>
       <label className="label-qty">{quantity}</label>
-      <button className="btn-plus" onClick={handleIncrease}>+</button>
+      <button className="btn-plus btn btn-primary" onClick={handleIncrease}>+</button>
     </div>
   );
 }

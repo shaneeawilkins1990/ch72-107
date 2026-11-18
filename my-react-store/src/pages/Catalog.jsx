@@ -1,26 +1,28 @@
 import "./Catalog.css";
 import Product from "../components/Product";
+import { useEffect, useState } from "react";
+import DataService from "../dataServices/dataService";
+
 
 
 function Catalog() {
+   const [products, setProducts] = useState([]);
+   // const products = [];
+    useEffect(() => {
+        //Load my data from the dataService
+        let service = new DataService();
+        let data = service.getProducts();
+        setProducts(data); 
+    }, []); //The empty array means that this run only happens once
     return(
         <div className="catalog">
-            <Product/>
-           <h5>This is my catalog</h5>
-           <label htmlFor="">My Clothing</label>
-           <input type="text" />
-           <button>Search</button>
+           {products.map(prod => <Product key={prod._id} data={prod} />)}
+                {/* for(i=0;i<products;i++)
+                let product = products[i]; */}  
         
         </div>
     );
 }
 
-function handleSearch(clickEvent) {
-    // Add search logic here
-    clickEvent.preventDefault();
-
-    console.log();
-
-}
 
 export default Catalog;

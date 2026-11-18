@@ -1,10 +1,8 @@
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer' 
-import Product from './components/Product' 
 import Catalog from './pages/Catalog'
-
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -12,10 +10,9 @@ function App() {
 
   return (
     <div>
-      <h1>Hello from react</h1>
+      <h1>Wilkins's  
+        <br></br>Farm & Garden</h1>
       <Navbar/>
-      <Product/>   
-      
       <Catalog/>
       <Footer/>
     </div>

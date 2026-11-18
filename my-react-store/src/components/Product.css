@@ -1,0 +1,26 @@
+img {
+    max-width: 150%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    outline: none;      
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline-offset: 2px;
+    outline-color: rgba(0, 0, 0, 0.2);
+    outline-style: solid;
+    outline-width: 2px;
+    outline: 2px solid rgba(0, 0, 0, 0.2);
+}
+

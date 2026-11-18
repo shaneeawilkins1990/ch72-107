@@ -1,0 +1,10 @@
+h5 {
+    text-align: center;
+    padding: 10px;
+    background-color: hsl(0, 0%, 4%);
+    margin: 0;
+    color: lab(83.24% 10.17 31.34 / 0.959);
+    text-shadow: 0px 0px 1px lab(83.24% 10.17 31.34 / 0.959);
+
+
+}
